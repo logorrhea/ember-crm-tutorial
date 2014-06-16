@@ -1,0 +1,5 @@
+article#leads
+    h1 leads
+    ul
+        each lead in controller
+            li= lead.fullName
