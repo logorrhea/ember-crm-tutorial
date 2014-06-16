@@ -1,1 +1,8 @@
-h1 Hello World
+header
+    article
+        .logo
+            h1
+                a href="javascript:void(0)" Ember CRM
+
+section#main
+    =outlet
