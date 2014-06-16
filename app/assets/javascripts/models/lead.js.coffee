@@ -9,5 +9,12 @@ App.Lead = DS.Model.extend
         @get('firstName') + ' ' + @get('lastName')
     ).property('firstName', 'lastName')
 
+# Statics
 App.Lead.reopenClass
     STATUSES: ['new', 'in progress', 'closed', 'bad']
+
+
+# Validations
+App.Lead.reopenClass
+    valid: (fields) ->
+        fields.firstName and fields.lastName
